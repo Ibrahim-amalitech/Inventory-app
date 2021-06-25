@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADD ITEM</title>
+    <link rel="stylesheet" href="additem.css">
+</head>
+<body>
+    <div>
+        <h1>
+            PROVIDE DETAILS FOR ITEM TO ADD
+        </h1>
+        <form id="formId" >
+            <label for="prodname-form">PRODUCT NAME: </label> <input type="text" id="prodname-form" value=""> <br> 
+            <label for="proddesc-form">PRODUCT DESCRIPTION: </label> <input type="text" size="100" id="proddesc-form" value=""> <br> 
+            <label for="prodcat-form">PRODUCT CATEGORY: </label><input type="text" id="prodcat-form" value=""><br> 
+            <label for="prodquant-form">PRODUCT QUANTITY: </label> <input type="text" id="prodquant-form" value=""><br>
+            <!-- <label for="prodimage-form">PRODUCT IMAGE: </label> <input type="image" alt="Submit" width="48" height="48" id="prodimage-form"><br> -->
+        <input type="button" id="formbutton" onclick="addItemClick()" value="Submit">
+        </form>
+    </div>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="index.js"></script>   
+</body>
+</html>

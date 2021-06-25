@@ -1,0 +1,12 @@
+table,th,td{
+    border: 1px solid black;
+    align-items: center;
+}
+
+
+table{
+    width: 100%;  
+}
+tr:hover{
+    background-color: lightcyan;
+}

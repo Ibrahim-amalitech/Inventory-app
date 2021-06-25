@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="itemlist-section">
+        <header>
+            <h1>RETAIL INVENTORY MANAGEMENT</h1>
+        </header>
+            <table id="Inventory-table">
+                <tr class="first-row">
+                    <th>NAME</th>
+                    <th>DESCRIPTION</th>
+                    <th>CATEGORY</th>
+                    <th>QTY AVAILABLE</th>
+                </tr>
+            </table>
+            <div class="legendlist">
+                <ul>
+                    <li id="instock">IN STOCK</li>
+                    <li id="almost">ALMOST OUT OF STOCK</li>
+                    <li id="outstock">OUT OF STOCK</li>
+                </ul>
+              </div>
+            <section class="action">
+                <ul >
+                    <li><button onclick="window.location.href='additem.html'">ADD ITEM</button></li>
+                    <li><button>UPDATE QUANTITY OR STOCK</button></li>
+                    <li><button>UPDATE ITEM DETAILS</button></li>
+                    <li><button onclick="window.location.href='removeitem.html'">REMOVE ITEM</button></li>
+                </ul>
+            </section>
+    </div>
+    
+    <div class="summary-section">
+        <h2> SUMMARY</h2>
+      <table>
+          <tr>
+              <th>TOTAL NUMBER OF ITEMS </th>
+              <th>ITEMS IN STOCK</th>
+              <th>TOTAL NUMBER OF CATEGORIES</th>
+          </tr>
+          <tr>
+              <td id="item-total"></td>
+              <td id="items-instock"></td>
+              <td id="category-total"></td>
+          </tr>
+      </table>
+      </ul>
+    </div>
+    
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="index.js"></script> 
+</body>
+</html>

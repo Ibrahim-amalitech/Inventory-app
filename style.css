@@ -1,0 +1,62 @@
+table,th,td{
+    border: 1px solid black;
+    align-items: center;
+}
+
+
+table{
+    width: 100%;  
+}
+h1{
+    text-align: center;
+    padding: 20px;
+    background-color: blue;
+}
+
+h2{
+    text-align: center;
+    padding: 5px;
+    background-color:lightskyblue ;
+}
+.action{
+    align-content: center;
+    width: 100vw;
+}
+li{
+    list-style-type: none;
+    display: inline-flex;
+    margin-right: 150px;   
+}
+
+button{
+padding:20px;
+border: 2px solid blue;
+}
+button:hover{
+    background-color: lightcyan;
+}
+
+/* .itemlist-section{
+    height: 80vh;
+} */
+.legendlist ul{
+    text-align: center;
+    
+}
+.legendlist li{
+    padding: 8px;
+    border: 2px;
+    border-radius: 10%;
+    
+    }
+    #instock{
+        background-color: green;
+    }
+
+    #outstock{
+        background-color: red;
+    }
+
+    #almost{
+        background-color: orange;
+    }
