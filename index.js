@@ -2,7 +2,7 @@
 
 
 if(localStorage.getItem('products') === null){
-   let products_infomation=[{
+   var products_infomation=[{
       "name": "PULLOVER LIGHT PINK",
       "description": "bright peach color",
       "category": "BOYS WEAR",
@@ -80,8 +80,7 @@ let productData = localStorage.getItem('products');
 let products_infoObject = JSON.parse(productData);
 
 // Get table row element and append 
-// document.getElementById('Inventory-table').getElementsByTagName('tbody')[0].children[0]
-// let getRowElement=document.getElementById('Inventory-table').getElementsByTagName('tr')[0];
+
 for (let i = 0; i < products_infoObject.length; i++) {
     let prodName=products_infoObject[i].name;
     let prodDescription=products_infoObject[i].description;
@@ -106,7 +105,7 @@ let table=document.getElementById("Inventory-table"), sumVal=0;
 for (let i = 1; i < table.rows.length; i++) {
    sumVal = sumVal + parseInt(table.rows[i].cells[3].innerHTML);
    document.getElementById("items-instock").innerHTML =  sumVal;
-   const CategorySet= new Set(table.rows[i].cells[2].innerHTML);
+   let CategorySet= new Set(table.rows[i].cells[2].innerHTML);
    document.getElementById("category-total").innerHTML = CategorySet.size;
 }
 
